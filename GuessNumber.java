@@ -8,7 +8,7 @@ public class GuessNumber {
         Scanner scan = new Scanner(System.in);
         System.out.print("Please enter your number from 1 to 6: ");
         int number = scan.nextInt();
-        if (number > 6) {
+        if (number > 6 || number < 1) {
             System.out.println("Sorry,you have entered incorrect value.Please try again.");
             System.exit(0);
         }
